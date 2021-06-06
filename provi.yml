@@ -1,0 +1,18 @@
+--
+- name : Apache stop
+
+  hosts : all
+
+  become : true
+
+
+  tasks :
+
+    - name : Stop apache
+
+      service:
+
+        name: apache2
+        state: stopped
+
+
